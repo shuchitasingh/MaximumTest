@@ -1,5 +1,4 @@
 package com.bridgelabz;
-
 //import org.junit.jupiter.api.Test;
 import org.junit.Assert;
 import org.junit.Before;
@@ -28,6 +27,25 @@ public class MaximumTest {
     public void givenMaximumInteger_AsThirdParameter_ShouldReturnMaximumInteger() {
         Integer maximumResult=maximum.maximumInteger(3,4,5);
         Integer expectedResult=5;
+        Assert.assertEquals(expectedResult,maximumResult);
+    }
+    @Test
+    public void givenMaximumFloat_AsFirstParameter_ShouldReturnMaximumFloat() {
+        Float maximumResult=maximum.maximumFloat(8.8f,7.7f,6.6f);
+        Float expectedResult=8.8f;
+        Assert.assertEquals(expectedResult,maximumResult);
+    }
+
+    @Test
+    public void givenMaximumFloat_AsSecondParameter_ShouldReturnMaximumFloat() {
+        Float maximumResult=maximum.maximumFloat(7.7f,8.8f,6.6f);
+        Float expectedResult=8.8f;
+        Assert.assertEquals(expectedResult,maximumResult);
+    }
+    @Test
+    public void givenMaximumFloat_AsThirdParameter_ShouldReturnMaximumFloat(){
+        Float maximumResult=maximum.maximumFloat(6.6f,7.7f,8.8f);
+        Float expectedResult=8.8f;
         Assert.assertEquals(expectedResult,maximumResult);
     }
 }

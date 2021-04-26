@@ -11,6 +11,17 @@ public class Maximum {
         }
         return maximum;
     }
+
+    public Float maximumFloat(Float x,Float y,Float z) {
+        Float maximum=x;
+        if(y.compareTo(maximum)>0){
+            maximum=y;
+        }
+        if(z.compareTo(maximum)>0){
+            maximum=z;
+        }
+        return maximum;
+    }
 }
 
 
