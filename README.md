@@ -1,1 +1,1 @@
-# Extend to print method to print max
+# Extended to print method to print max
